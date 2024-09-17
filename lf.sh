@@ -1,0 +1,15 @@
+
+
+#!/bin/bash     下面为备份到仓库
+# 获取当前日期，格式为 YYYYMMDD
+current_date=$(date +%Y%m%d)
+	
+# 添加所有变更到暂存区
+git add .
+	
+# 提交变更，包括当前日期
+git commit -m "上传文件"
+	
+# 推送到远程仓库的 nain 分支
+git push origin main
+
